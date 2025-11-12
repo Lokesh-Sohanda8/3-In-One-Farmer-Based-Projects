@@ -169,7 +169,7 @@ def predict_potato_disease(image: Image.Image) -> str:
     except Exception as e:
         return f"Error: {str(e)}"
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "your_api_key"
 
 llm = ChatGroq(
     temperature=0,
@@ -452,3 +452,4 @@ st.markdown("""
         Empowering farmers through technology and innovation
     </div>
 """, unsafe_allow_html=True)
+
