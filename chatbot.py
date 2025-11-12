@@ -2,12 +2,12 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_groq import ChatGroq
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "your_api_key"
 
 llm = ChatGroq(
     temperature=0,
     groq_api_key=GROQ_API_KEY,
-    model_name="meta-llama/llama-4-scout-17b-16e-instruct"
+    model_name="your_preferred_model"
 )
 
 # Streamlit UI
@@ -29,3 +29,4 @@ if st.button("Get Advice"):
                 st.error(f"Something went wrong: {e}")
     else:
         st.warning("Please enter a question to get started.")
+
