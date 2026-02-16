@@ -173,8 +173,8 @@ GROQ_API_KEY = "your_api_key"
 
 llm = ChatGroq(
     temperature=0,
-    groq_api_key=your_preferred_api_key,
-    model_name="your_preferred_model"
+    groq_api_key=GROQ_API_KEY,
+    model_name="meta-llama/llama-4-scout-17b-16e-instruct"
 )
 
 # ==================== HOME PAGE ====================
@@ -452,5 +452,6 @@ st.markdown("""
         Empowering farmers through technology and innovation
     </div>
 """, unsafe_allow_html=True)
+
 
 
