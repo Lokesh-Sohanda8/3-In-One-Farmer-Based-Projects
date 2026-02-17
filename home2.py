@@ -104,7 +104,7 @@ page = st.sidebar.radio(
 def load_crop_model():
     """Load the crop recommendation model"""
     try:
-        with open('C:\\Users\\shoai\\Downloads\\Machine Learning Projects\\Real-World-Projects-ML+DL+Logic\\Crop-Recommendation-System\\crop_rec.pkl', 'rb') as file:
+        with open('crop_rec.pkl', 'rb') as file:
             model = pickle.load(file)
         return model
     except FileNotFoundError:
@@ -114,7 +114,7 @@ def load_crop_model():
 def load_potato_model():
     """Load the potato disease detection model"""
     try:
-        model = jb.load(r'C:\Users\shoai\Downloads\Machine Learning Projects\All-3-Projects-Combined\Potato_Image_classification\rf_model_mobilenetv2_potato.joblib')
+        model = jb.load(r'rf_model_mobilenetv2_potato.joblib')
         return model
     except FileNotFoundError:
         return None
@@ -452,6 +452,7 @@ st.markdown("""
         Empowering farmers through technology and innovation
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
