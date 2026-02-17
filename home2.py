@@ -104,7 +104,7 @@ page = st.sidebar.radio(
 def load_crop_model():
     """Load the crop recommendation model"""
     try:
-        with open('C:\\Users\\shoai\\Downloads\\Machine Learning Projects\\Real-World-Projects-ML+DL+Logic\\Crop-Recommendation-System\\crop_rec.pickle', 'rb') as file:
+        with open('C:\\Users\\shoai\\Downloads\\Machine Learning Projects\\Real-World-Projects-ML+DL+Logic\\Crop-Recommendation-System\\crop_rec.pkl', 'rb') as file:
             model = pickle.load(file)
         return model
     except FileNotFoundError:
@@ -452,6 +452,7 @@ st.markdown("""
         Empowering farmers through technology and innovation
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
